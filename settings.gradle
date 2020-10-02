@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "1_Layouts_Views_Resources"
