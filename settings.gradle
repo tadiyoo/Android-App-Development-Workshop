@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "3_Explicit_Intents_and_Activities"
