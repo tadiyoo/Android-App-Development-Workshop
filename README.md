@@ -1,9 +1,8 @@
 # Android-App-Development-Workshop
 This repository contains all resources related to our Android App Development Workshop organized by Tadiyos , Paul and Simon collaboration with the CSE department @UESTC
 
-
 # Requirements:
-The following ar the required package to train both NTM and SAM:
+The following package required to train both NTM and SAM:
 1. tensorboard_logger
 2. argcomplete
 3. attrs
@@ -62,7 +61,7 @@ For the above trained task I used the following command:
 
 
 # Self-attentive Associative Memory (SAM):
-For **SAM** : the copy, Associative Recall and NFarthest tasks are trained  successfully using LSTM model and the models saved under:
+For **SAM** : the copy, Associative Recall and NFarthest tasks are trained  successfully using LSTM model plus partially trained using STM model and the models saved under:
 ```
 saved_models folder
 ```
@@ -70,7 +69,6 @@ The log data for each task found in:
 ```
 logs folder
 ``` 
-
 
 
 # To train those tasks on LSTM and STM:
@@ -85,21 +83,21 @@ python run_toys.py -task_json=./tasks/copy.json -model_name=stm -mode=train
 ```
 
 ## Associative Recall: 
-### LSTM baseline:
+#### LSTM baseline:
 ``` 
 python run_toys.py -task_json=./tasks/rar.json -model_name=lstm -mode=train
 ```
-### STM: 
+#### STM: 
 ```  
 python run_toys.py -task_json=./tasks/rar.json -model_name=stm -mode=train
 ```
 
 ## NFarthest 
-### LSTM baseline:
+#### LSTM baseline:
 ``` 
 python run_toys.py -task_json=./tasks/nfar.json -model_name=lstm -mode=train
 ```
-### STM: 
+#### STM: 
 ```  
 python run_toys.py -task_json=./tasks/nfar.json -model_name=stm -mode=train
 ```
