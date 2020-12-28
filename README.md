@@ -2,7 +2,6 @@
 This repository contains all resources related to our Android App Development Workshop organized by Tadiyos , Paul and Simon collaboration with the CSE department @UESTC
 
 
-
 # Requirements:
 The following ar the required package to train both NTM and SAM:
 1. tensorboard_logger
@@ -76,11 +75,11 @@ logs folder
 
 # To train those tasks on LSTM and STM:
 ## Copy Task:
-### LSTM baseline:
+#### LSTM baseline:
 ```  
 python run_toys.py -task_json=./tasks/copy.json -model_name=lstm -mode=train
 ```
-### STM: 
+#### STM: 
 ```  
 python run_toys.py -task_json=./tasks/copy.json -model_name=stm -mode=train
 ```
@@ -95,7 +94,7 @@ python run_toys.py -task_json=./tasks/rar.json -model_name=lstm -mode=train
 python run_toys.py -task_json=./tasks/rar.json -model_name=stm -mode=train
 ```
 
-## for NFarthest 
+## NFarthest 
 ### LSTM baseline:
 ``` 
 python run_toys.py -task_json=./tasks/nfar.json -model_name=lstm -mode=train
